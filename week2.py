@@ -2,13 +2,13 @@ import math
 
 # 1c. How many bits are required if you need 18 unique bit strings? Write a short Python function
 # that does this calculation for any number of bit strings.
-def uniqueBitStrings (n): 
+def uniqueBitStrings (n: int) -> int: 
     return math.ceil(math.log2(n))
 
 # Find the ASCII representations of the following using the ASCII chart from the Lecture 2 slides
 # and using Python.
 def convertToASCII (s):
-    return ord(s)
+    return bin(ord(s))
 
 ## Convert these binary numbers to base-10. Double check with Python
 def convertToBase10 (n):
